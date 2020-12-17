@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+<title>Portfolio Website</title>
+
+<style>
+<!--
+.styling{
+background-color: black;
+
+color: violet;
+font: bold 20px arial;
+padding: 3px;
+position: absolute;
+bottom: 80px;
+left: 10px;
+}
+-->
+</style>
+
+<h1><i><b>WELCOME TO MY WEBSITE !</i></b></font></h1>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: brown;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: skyblue;
+}
+</style>
+
+<style>
+.content h1{
+font-size: 40px;
+font-weight:100;
+margin-top: 24px;
+margin-bottom: 15px;
+color: darkslategrey;
+font-family: serif;
+}
+</style>
+
+<style>
+.content p1{
+font-size: 27px;
+color: dimgrey;
+font-family: monospace;
+}
+</style>
+
+<style>
+.content pre{
+font-size: 20px;
+font-family: arial;
+color: green;
+}
+</style>
+
+<style>
+.content{
+margin-left: 100;
+margin-top: 100;
+}
+</style>
+
+<style>
+.btn{
+display: inline-block;
+background: linear-gradient(45deg, lightcoral, lightskyblue, lightpink);
+border-radius: 6px;
+padding: 10px 20px;
+box-sizing: border-box;
+text-decoration: none;
+font-size: 25px;
+font-style: arial;
+color: indigo;
+}
+</style>
+
+<style>
+html{
+background:url('images/blur.jpg') no-repeat center center fixed;
+background-size:cover;
+}
+</style>
+
+</head>
+<body>
+
+<embed src="audio/halsey.mp3" hidden="true"></embed>
+<br>
+
+<ul>
+<li><a class="active" href="index.html">HOME</a></li>
+<li><a href=biodata.html>BIODATA</a></li>
+<li><a href=experience.html>EXPERIENCE</a></li>
+<li><a href=education.html>EDUCATION</a></li>
+<li><a href=family.html>FAMILY</a></li>
+<li><a href=gallery.html>GALLERY</a></li>
+<li><a href=contact.html>CONTACT ME</a></li>
+</ul>
+
+<div class="content">
+<a href="" class="btn">Hello ! This is me.</a>
+<h1>Assalamualaikum, my name is Nur Adilah.</h1>
+<p1>I'm a student at UITM Kedah.</p1>
+<pre>This page is all about myself.
+</div>
+<br>
+
+<span id="digitalclock" class="styling"></span>
+
+<script>
+<!--
+
+/*****************************************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+*****************************************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='violet'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='violet'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+//-->
+</script>
+
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/774292/t/2"></script>
+
+
+</body>
+</html>
